@@ -37,7 +37,7 @@ There are a variety of variables that will impact the outcome of this analysis:
 
 The objective of the analysis is to analyze the effects of variables on the cost of medical care. The analysis seeks to answer the following questions:
 
-1. What region has the highest cost of medical care?
+1. What region has the lowest cost of medical care?
 2. Which  gender has the highest average charges?
 3. Do patients with dependents  have higher medical costs than patients who don’t have dependents?
 4. Do individuals with higher BMI have higher medical costs?
