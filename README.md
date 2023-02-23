@@ -52,7 +52,7 @@ The objective of the analysis is to analyze the effects of variables on the cost
 
 The Southwest region has the lowest average of health care due to the following risk factors associated with charges:
 
-Smoking adversely impacts charges, one average smoker incur greater charges than non smokers. The Southwest has the least amount of female smokers, 21, as well as the least amount of smokers regardless of sex, 58.
+Smoking adversely impacts charges, on average smokers incur greater charges than non smokers. The Southwest has the least amount of female smokers, 21, as well as the least amount of smokers regardless of sex, 58.
 Age also affects the amount of the charges of the patient, the older the patient the more the charges on average.The Southwest region has the lowest average charges due to the age distribution of patient population within the Southwest region. The Southwest  region has the lowest middle aged population, as well as the most teens compared to other regions . Also, the southwest region has the least amount of female smokers which also affects medical care charges.
 
 
