@@ -6,6 +6,8 @@ Dataset of personal medical data of 1,338 patients with a variety of variables t
 
 - Access Dataset [HERE](https://www.kaggle.com/datasets/mirichoi0218/insurance) 
   - Dataset Name ***Insurance.CSV*** 
+  
+- View Personal Medical Cost Data Dashboard [HERE](https://public.tableau.com/views/MedicalDataDash/PersonalMedicalDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## Variables
 
