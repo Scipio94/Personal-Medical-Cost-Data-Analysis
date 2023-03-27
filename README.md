@@ -4,10 +4,6 @@
 
 Dataset of personal medical data of 1,338 patients with a variety of variables that have an affect on the cost of medical services provided. The purpose of the analysis is to analyze the effects of variables on the cost of medical care, e.g. age, gender, region, etc. 
 
-- Access Dataset [HERE](https://www.kaggle.com/datasets/mirichoi0218/insurance) 
-  - Dataset Name ***Insurance.CSV*** 
-  
-- View Personal Medical Cost Data Dashboard [HERE](https://public.tableau.com/views/MedicalDataDash/PersonalMedicalDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## Variables
 
@@ -39,40 +35,53 @@ There are a variety of variables that will impact the outcome of this analysis:
 
 The objective of the analysis is to analyze the effects of variables on the cost of medical care. The analysis seeks to answer the following questions:
 
-1. What region has the lowest cost of medical care?
-2. Which  gender has the highest average charges?
-3. Do patients with dependents  have higher medical costs than patients who don’t have dependents?
-4. Do individuals with higher BMI have higher medical costs?
+1. Which region has the lowest cost of medical care?
+2. Which gender has the highest typical medical charges?
+3. Is there correlation between the number of dependents a patient has and medical charges?
+4. Is there correlation between age and medical charges?
+5. Do individuals with higher BMI have higher medical charges?
+
 
 ## Analysis
 
 1. What region has the lowest cost of medical care?
 
-![Region Average Cost](https://user-images.githubusercontent.com/112409778/210587954-5f90f59d-c6be-4b50-bdf1-2dc37af65bd5.jpg)
+![Charges Histogram](https://user-images.githubusercontent.com/112409778/227813514-97acd1b2-554a-4b28-a397-bf3424d2fed6.jpg)
 
-The Southwest region has the lowest average of health care due to the following risk factors associated with charges:
-
-Smoking adversely impacts charges, on average smokers incur greater charges than non smokers. The Southwest has the least amount of female smokers, 21, as well as the least amount of smokers regardless of sex, 58.
-Age also affects the amount of the charges of the patient, the older the patient the more the charges on average.The Southwest region has the lowest average charges due to the age distribution of patient population within the Southwest region. The Southwest  region has the lowest middle aged population, as well as the most teens compared to other regions . Also, the southwest region has the least amount of female smokers which also affects medical care charges.
+The overall average of charges in the dataset is $13,270.42. However, there is an uneven distribution of charges in the dataset. As indicated in the histogram above there is a right skew that is affecting the average. The median charge, $9,377.90, is a better indication of the amount of a typical medical charge. 
 
 
-2. Which  gender has the highest average charges?
+![Region Median Charges ](https://user-images.githubusercontent.com/112409778/227813527-8c016af7-cbef-4218-a31c-87a211c04608.jpg)
 
-![Average Charges Sex (1)](https://user-images.githubusercontent.com/112409778/210586929-fc2105e7-28d7-49c5-a58a-08c070664ded.jpg)
-
-On average males have the highest average charges,$13,956.75,compared to females,$12,569.58. This can be attributed to a slightly higher BMI as well as 24% of the males in the dataset being smokers compared to that of just 17% of females within the dataset being smokers.
+The same is true for the distribution of charges in the four regions in the dataset. As aforementioned the median is a better indication of the typical medical charge within each region. The Southwest region has the lowest median charge, $8,798.59, of all the regions in the dataset. This can be attributed to the Southwest region having the least amount of smokers, 58, overall, the least amount of female smokers, 21, in the dataset, and the second smallest amount of male smokers, 37, in the dataset. This is significant due to smokers incurring charges that are four times greater than non-smokers on average!
 
 
-3. Do patients with dependents have higher medical costs than patients who don’t have dependents?
+2. Which  gender has the highest highest typical charges?
 
-![Average Charges Per Dependent](https://user-images.githubusercontent.com/112409778/210587658-e24ac9fd-8157-431e-88b1-d82d8b940698.jpg)
+The distribution of the charges of both male and females have a right skew in which outliers are impacting the calculation of the average charges. 
 
-There is a correlation between the number of children dependents a patient has and the average charges of the patient irregardless of sex. The more dependents a patient has the higher the average cost.However, there are some outliers with patients that have 5 dependents, but it should be disregarded as the amount of patients with 5 dependents isn’t statistically relevant.  
+![Median Charges Sex](https://user-images.githubusercontent.com/112409778/227813596-335b759e-2ef1-4b87-a8e4-2577365f2c70.jpg)
+
+The median charges of each sex is a better indicator of the typical charges. Males have a median charge of $9,369.62  and females have a median charge of  $9,412.96 as indicated in the bar ch
+art above.
 
 
-4. Do individuals with higher BMI have higher medical costs?
+3. Is there correlation between the number of dependents a patient has and medical charges?
 
-![BMI Dashboard (1)](https://user-images.githubusercontent.com/112409778/210587831-de7fa4c2-4996-483e-9ea3-784ae143a1ab.jpg)
+![Number of Children and Charges Scatter Plot](https://user-images.githubusercontent.com/112409778/227813660-5b866f7b-e106-4894-82db-bb04e728f5fb.jpg)
 
-Yes, there is a correlation between BMI and average charges. The higher a patient’s BMI the higher the average charges. Additionally, the majority of the patients in the dataset are considered to be obese. 
+As indicated in the scatter plot above there is no linear correlation between number of dependents and charges. The correlation coefficient of comparing the number of children a patient has to charges incurred is .07, indicating that there is no correlation. This is also evident in the line of best fit seen on the scatter plot above.
 
+
+4. Is there correlation between age and medical charges?
+
+![Age and Charges Scatter Plot](https://user-images.githubusercontent.com/112409778/227813708-e345d892-2907-4b04-b49f-41ad5c887c93.jpg)
+
+There is a low correlation between age and charges incurred by patients. This is indicated by the correlation coefficient of 0.30 as well as the line of best fit in the scatter plot above. This is also indicated in the average charges of each age category as well. Teens have an average medical charge of $8,407.35, Adults have an average charge of $10,603.65, Middle Aged Adults have an average medical charge of $15,431.97, and Seniors have an average medical charge of $21,248.02. There is a clear pattern of increased cost as the age of the patient increases.
+
+5. Do individuals with higher BMI have higher medical costs?
+
+![BMI Dashboard (1)](https://user-images.githubusercontent.com/112409778/227813813-03838721-6a21-4a0c-ba9a-d0e9bf06db09.jpg)
+
+
+Yes, individuals with higher BMIs have higher medical costs. The higher a patient’s BMI the higher the average charges as indicated in the line chart above. 
