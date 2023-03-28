@@ -295,3 +295,20 @@ ORDER BY Avg_Cost;
 |Normal|10409.34|
 |Overweight|10987.51|
 |Obese|15552.34|
+
+~~~ SQL 
+/Calculating Avg and Median Charges of BMI Subgroups*/
+SELECT 
+  DISTINCT Obese,
+  ROUND(AVG(charges) OVER (PARTITION BY Obese),2) AS Avg_Charges_Obese,
+  PERCENTILE_DISC(charges,0.50) OVER (PARTITION BY Obese) AS Obese_Category_Median
+FROM BMI_Table
+WHERE Smoker IS TRUE
+~~~
+
+**Result**
+
+|Obese|Avg_Charges_Obese|Obese_Category_Median|
+|---|---|---|
+|Not Obese|21363.22|20167.34|
+|Obese|41557.99|40904.2|
