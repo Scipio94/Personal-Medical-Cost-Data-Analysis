@@ -85,7 +85,7 @@ There is a low correlation between age and charges incurred by patients. This is
 
 5. Do individuals with higher BMI have higher medical costs?
 
-![BMI Dashboard (1)](https://user-images.githubusercontent.com/112409778/227813813-03838721-6a21-4a0c-ba9a-d0e9bf06db09.jpg)
+![Personal Medical Dashboard (2)](https://user-images.githubusercontent.com/112409778/228240332-e56641f0-ab72-493a-881e-76ea344d7e6f.jpg)
 
 
 Yes, individuals with higher BMIs have higher medical costs. The higher a patient’s BMI the higher the average charges as indicated in the line chart above. 
