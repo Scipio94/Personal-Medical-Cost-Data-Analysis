@@ -251,3 +251,47 @@ ORDER BY Region_Median;
 |southeast|9294.13|9382.03|
 |northeast|10057.65|9382.03|
 
+
+~~~ SQL 
+/*BMI Categories*/
+CREATE TEMP TABLE BMI_Table AS
+SELECT 
+*,
+  CASE 
+  WHEN BMI < 18.5 THEN 'Underweight'
+  WHEN BMI >= 18.5 AND BMI < 25 THEN 'Normal'
+  WHEN BMI >= 25 AND BMI < 30 THEN 'Overweight'
+  WHEN BMI >= 30 THEN 'Obese'
+  END AS BMI_Category,
+
+  CASE 
+  WHEN BMI < 30 THEN 'Not Obese'
+  WHEN BMI >= 30 THEN 'Obese'
+  END Obese
+
+FROM `single-being-353600.Medical_Insurance_Data.Insurance_Data`;
+
+SELECT 
+  BMI_Category,
+  ROUND(AVG(charges),2) AS Avg_Cost
+FROM BMI_Table
+GROUP BY BMI_Category
+ORDER BY Avg_Cost;
+~~~
+
+~~~ SQL 
+SELECT 
+  BMI_Category,
+  ROUND(AVG(charges),2) AS Avg_Cost
+FROM BMI_Table
+GROUP BY BMI_Category
+ORDER BY Avg_Cost;
+~~~
+**Result**
+
+|BMI_Category|Avg_Cost|
+|---|---|
+|Underweight|8852.2|
+|Normal|10409.34|
+|Overweight|10987.51|
+|Obese|15552.34|
