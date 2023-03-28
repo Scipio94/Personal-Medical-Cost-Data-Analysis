@@ -44,6 +44,7 @@ The objective of the analysis is to analyze the effects of variables on the cost
 3. Is there correlation between the number of dependents a patient has and medical charges?
 4. Is there correlation between age and medical charges?
 5. Do individuals with higher BMI have higher medical charges?
+6. What is the relationship between smoking and medical charges?
 
 
 ## Analysis
@@ -89,3 +90,22 @@ There is a low correlation between age and charges incurred by patients. This is
 
 
 Yes, individuals with higher BMIs have higher medical costs. The higher a patient’s BMI the higher the average charges as indicated in the line chart above. 
+
+6. What is the relationship between smoking and medical charges?
+
+![Smoker and Non-Smoker Average Charge Comparison](https://user-images.githubusercontent.com/112409778/228288741-6e1fb81a-3d11-4d60-8830-7e6368f330aa.jpg)
+
+Smoking adversely impacts medical charges. As indicated in the bar chart above smokers have an average charge of $32,050.23 and non-smokers have an average medical charge of $8,434.27. Smokers have an average charge that is nearly four times greater than the amount of non-smokers.
+
+![Smoker Charges Distribution](https://user-images.githubusercontent.com/112409778/228288798-d75c2e8a-ea63-4074-971b-0d0a4c3237bf.jpg)
+
+As seen in the histogram above, the distribution of charges of smokers is bimodal. The two modes are indicative of the subgroups related to BMI. There are two subgroups, patients that have a BMI less than 30 and patients that have a BMI greater than 30. Recall that a BMI over 30 is categorized as obese and a BMI less than 30 is categorized as not obese.
+
+![Smoker Charges Not Obese Distribution](https://user-images.githubusercontent.com/112409778/228288898-2607831d-6515-4d4e-b9e0-3287ce04039e.jpg)
+
+In the histogram above there is a slight right skew. So, the median is a better indication of the typical charge of a smoker that has a BMI of less than 30. The median charge is $20,167.34.
+
+![Smoker Charges Obese Distribution](https://user-images.githubusercontent.com/112409778/228289038-4c2f6115-fc20-41c2-a619-4ea103fbb3aa.jpg)
+
+The histogram above shows an even distribution of charges with very few outliers. The average charge for smokers with a BMI greater than 30 is $41,557.99.
+
